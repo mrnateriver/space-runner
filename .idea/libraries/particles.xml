@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="particles" type="flex">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/shared/lib/particles/src" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

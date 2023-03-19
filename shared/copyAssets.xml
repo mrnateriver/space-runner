@@ -1,0 +1,20 @@
+<!--
+  ~ Copyright (c) 2020 Evgenii Dobrovidov.
+  ~ Working name of the project: "space-runner".
+  ~ All rights reserved.
+  -->
+
+<project name="space-runner-desktop" default="copyAssets" basedir=".">
+    <description>
+        Script for copying shared assets to desktop build output directory.
+    </description>
+
+    <target name="copyAssets">
+        <echo message="Copying shared assets to output directory..." />
+        <copy todir="../out/production/desktop" overwrite="true">
+            <fileset dir="./assets">
+                <include name="**/**" />
+            </fileset>
+        </copy>
+    </target>
+</project>

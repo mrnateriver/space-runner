@@ -1,0 +1,7 @@
+#!/bin/bash
+DIR=`dirname $0`
+OUT=$DIR/Assets.xcassets/build #../out/production/ios/Assets.xcassets
+rm -Rf $OUT
+mkdir $OUT
+xcrun actool $DIR/Assets.xcassets --compile $OUT --platform iphoneos --minimum-deployment-target 8.0 --app-icon AppIcon --output-partial-info-plist $OUT/partial.plist
+cp $OUT/Assets.car $OUT/../../Assets.car
